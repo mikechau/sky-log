@@ -32,7 +32,7 @@ module.exports = {
 
   stats: {
     colors: true,
-    reasons: true,
+    reasons: true
   },
 
   resolve: {
@@ -131,7 +131,7 @@ module.exports = {
       exclude: [
         /node_modules[\\\/]react(-router)?[\\\/]/,
       ]
-    }
+    },
   },
 
   eslint: {
