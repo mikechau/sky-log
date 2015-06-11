@@ -1,11 +1,13 @@
 var webpack = require('webpack');
 var WebpackDevServer = require('webpack-dev-server');
-var config = require('./webpack.hot.config');
+var config = require('./dev.webpack.config');
 
 new WebpackDevServer(webpack(config), {
   publicPath: config.output.publicPath,
   hot: true,
-  historyApiFallback: true
+  historyApiFallback: {
+    index: 'index.dev.html'
+  }
 }).listen(9999, 'localhost', function (err, result) {
   if (err) {
     console.log(err);
