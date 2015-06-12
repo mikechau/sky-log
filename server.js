@@ -6,7 +6,7 @@ new WebpackDevServer(webpack(config), {
   publicPath: config.output.publicPath,
   hot: true,
   historyApiFallback: {
-    index: 'dev.html'
+    index: './templates/dev/index.html'
   }
 }).listen(9999, 'localhost', function (err, result) {
   if (err) {
