@@ -74,7 +74,7 @@ module.exports = {
       },
       {
         test: /\.(scss|sass)$/,
-        loader: 'css-loader!sass-loader'
+        loader: 'style-loader!css-loader!sass-loader'
       },
       {
         test: /\.(png|jpg|jpeg|gif|svg)$/,
@@ -82,7 +82,7 @@ module.exports = {
       },
       {
         test: /\.(woff|woff2)$/,
-        loader: 'url-loder?limit=10000'
+        loader: 'url-loader?limit=10000'
       },
       {
         test: /\.(ttf|eot)$/,
